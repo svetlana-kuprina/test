@@ -5,10 +5,15 @@ require "Blocks/header.php";
 ?>
 <h1> Главная страница! </h1>
 <?php
-$file = fopen('text.php','w');
-fwrite($file,"просто текст \n Это просто текст");
-fclose($file);
+    //phpinfo();
+//echo "<pre>";
+//print_r($_SERVER);
+//echo "</pre>";
+//    echo  $_SERVER['HTTP_HOST'].'-'.$_SERVER['REQUEST_URI']."<br>";
+//    echo $_SERVER['HTTP_USER_AGENT']."<br>";
 
-require  "Blocks/footer.php";
+    if ($_GET['source']!= "");
+    else
+
 ?>
 
