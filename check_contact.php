@@ -3,7 +3,7 @@ session_start();
 
 function redirect() {
     header('Location: contact.php');
-    exit();
+    exit;
 }
     $user_name = htmlspecialchars(trim($_POST['username']));
     $from = htmlspecialchars(trim($_POST['email']));
