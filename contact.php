@@ -17,7 +17,7 @@ require "Blocks/header.php";
 </form>
 
 <?php
-
+//print_r($_SESSION);
 
 require "Blocks/footer.php";
 ?>
