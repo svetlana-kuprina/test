@@ -21,30 +21,30 @@ function redirect() {
     $_SESSION['$error_message'] = '';
 
     if (strlen($user_name) <= 5) {
-        echo("Ошибка имя".'<br>');
+ //       echo("Ошибка имя".'<br>');
         $_SESSION['$error_username'] = "Введите корректное имя";
  //       redirect();
     }
  //   elseif (strlen($from)< 5 || strpos( $from,"@")== false) {
     if (strlen($from)< 5 || strpos( $from,"@")== false) {
-        echo('Ошибка адрес'.'<br>');
+//        echo('Ошибка адрес'.'<br>');
         $_SESSION['$error_from'] = "Введите корректный email";
 //        redirect();
     }
     if (strlen($subject)<= 5 ) {
-        echo('Ошибка тема'.'<br>');
+//        echo('Ошибка тема'.'<br>');
         $_SESSION['$error_subject'] = "Тема сообщения не менее 5 символов";
 //        redirect();
     }
     if (strlen($message)<= 15 ) {
-        echo('Ошибка сообщение'.'<br>');
+//        echo('Ошибка сообщение'.'<br>');
         $_SESSION['$error_message'] = "Сообщение не менее 15 символов";
 //        redirect();
     }
 
-    echo($_SESSION['$error_username'].'!1!'.'<br>');
-    echo($_SESSION['$error_from'].'!2!'.'<br>');
-    echo($_SESSION['$error_subject'].'!3!'.'<br>');
-    echo($_SESSION['$error_message'].'!4!'.'<br>');
+//    echo($_SESSION['$error_username'].'!1!'.'<br>');
+//    echo($_SESSION['$error_from'].'!2!'.'<br>');
+//    echo($_SESSION['$error_subject'].'!3!'.'<br>');
+//    echo($_SESSION['$error_message'].'!4!'.'<br>');
 
     redirect();
