@@ -10,4 +10,3 @@ require "Blocks/header.php";
 
 require "Blocks/footer.php";
     ?>
-
